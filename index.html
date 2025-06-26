@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title></title>
+
+  <!--[if lt IE 9]>
+      <script src="./js/html5.js"></script>
+   <![endif]-->
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script>
+
+    $(function(){
+      var lies = $('#gnb li')
+      var liL = $('.navL li')
+      
+      liL.on('click',function(){
+        liL.removeClass('on')
+        
+        var TCS = $(this).attr('class')
+        $('#gnb .navR').removeClass('on') 
+        $('#gnb .' + TCS).addClass('on')
+        $(this).addClass('on')
+      });
+      
+      //inter trade menu click
+      $('.BIT li').on('click',function(){
+        $('#contents article').removeClass('on')
+        $('#gnb .navR li').removeClass('on')
+        
+        var TC = $(this).attr('class')
+        $(this).addClass('on')
+        $('#contents .BIT .' + TC).addClass('on')
+      });
+      
+      $('.ETH li').on('click',function(){
+        $('#contents article').removeClass('on')
+        $('#gnb .navR li').removeClass('on')
+        
+        var TC = $(this).attr('class')
+        $(this).addClass('on')
+        $('#contents .ETH .' + TC).addClass('on')
+      });
+      
+      $('.RIP li').on('click',function(){
+        $('#contents article').removeClass('on')
+        $('#gnb .navR li').removeClass('on')
+        
+        var TC = $(this).attr('class')
+        $(this).addClass('on')
+        $('#contents .RIP .' + TC).addClass('on')
+      });
+      //
+      
+      $('.mobBtn').on('click',function(){
+        $(this).parent().toggleClass('on')
+      });
+      
+      
+    });
+  
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+    <nav id="gnb" class="on">
+      <div class="navL">
+        <h1><img src="./img/mypage_logo.png" alt="noblese token logo"></h1>
+        <ul>
+          <li class="BIT on"></li>
+          <li class="ETH"></li>
+          <li class="RIP"></li>
+        </ul>
+      </div>
+      <div class="navR BIT on">
+        <input type="search" placeholder="Search">
+        <ul id="style-3">
+          <li class="ex001">빗썸</li>
+          <li class="ex002">코빗</li>
+          <li class="ex003">거래소003</li>
+          <li class="ex004">거래소004</li>
+          <li class="ex005">거래소005</li>
+          <li class="ex006">거래소006</li>
+          <li class="ex007">거래소007</li>
+          <li class="ex008">거래소008</li>
+          <li class="ex009">거래소009</li>
+          <li class="ex010">거래소010</li>
+        </ul>
+      </div>
+      <div class="navR ETH">
+        <input type="search" placeholder="Search">
+        <ul id="style-3">
+          <li class="ex001">빗썸</li>
+          <li class="ex002">코빗</li>
+          <li class="ex003">거래소011</li>
+          <li class="ex004">거래소012</li>
+          <li class="ex005">거래소013</li>
+          <li class="ex006">거래소014</li>
+          <li class="ex007">거래소015</li>
+          <li class="ex008">거래소016</li>
+          <li class="ex009">거래소017</li>
+          <li class="ex010">거래소018</li>
+        </ul>
+      </div>
+      <div class="navR RIP">
+        <input type="search" placeholder="Search">
+        <ul id="style-3">
+          <li class="ex001">빗썸</li>
+          <li class="ex002">코빗</li>
+          <li class="ex003">거래소021</li>
+          <li class="ex004">거래소022</li>
+          <li class="ex005">거래소023</li>
+          <li class="ex006">거래소024</li>
+          <li class="ex007">거래소025</li>
+          <li class="ex008">거래소026</li>
+          <li class="ex009">거래소027</li>
+          <li class="ex010">거래소028</li>
+        </ul>
+      </div>
+      <div class="mobBtn">
+        <div>
+          <div></div>
+        <div></div>
+        <div></div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="contents">
+      <div class="BIT">
+        <article class="ex001">
+            <div class="tablehead">
+              
+              <div>match</div>
+              <div>earnings rate</div>
+              <div>status</div>
+              <div>date</div>
+            </div>
+            <div class="tablebody">
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              <div>
+                <div>거래소1 / 거래소3</div>
+                <div>0.3%</div>
+                <div>complete</div>
+                 <div>18:30 24-03-2019</div>
+              </div>
+              
+            </div>
+        </article>
+        <article class="ex002">
+          adkfaj
+        </article>
+        <article class="ex003">
+          adkfaj
+        </article>
+        <article class="ex004">
+          adkfaj
+        </article>
+        <article class="ex005">
+          adkfaj
+        </article>
+        <article class="ex006">
+          adkfaj
+        </article>
+        <article class="ex007">
+          adkfaj
+        </article>
+        <article class="ex008">
+          adkfaj
+        </article>
+        <article class="ex009">
+          adkfaj
+        </article>
+        <article class="ex010">
+          adkfaj
+        </article>
+      </div>
+      
+       <div class="ETH">
+        <article class="ex001">
+          dummy
+        </article>
+        <article class="ex002">
+          adkfaj
+        </article>
+        <article class="ex003">
+          adkfaj
+        </article>
+        <article class="ex004">
+          adkfaj
+        </article>
+        <article class="ex005">
+          adkfaj
+        </article>
+        <article class="ex006">
+          adkfaj
+        </article>
+        <article class="ex007">
+          adkfaj
+        </article>
+        <article class="ex008">
+          adkfaj
+        </article>
+        <article class="ex009">
+          adkfaj
+        </article>
+        <article class="ex010">
+          adkfaj
+        </article>
+      </div>
+      
+       <div class="RIP">
+        <article class="ex001">
+          dummy
+        </article>
+        <article class="ex002">
+          adkfaj
+        </article>
+        <article class="ex003">
+          adkfaj
+        </article>
+        <article class="ex004">
+          adkfaj
+        </article>
+        <article class="ex005">
+          adkfaj
+        </article>
+        <article class="ex006">
+          adkfaj
+        </article>
+        <article class="ex007">
+          adkfaj
+        </article>
+        <article class="ex008">
+          adkfaj
+        </article>
+        <article class="ex009">
+          adkfaj
+        </article>
+        <article class="ex010">
+          adkfaj
+        </article>
+      </div>
+      
+    </section>
+
+
+  </div>
+</body>
+
+</html>
